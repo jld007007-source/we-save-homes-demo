@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-<meta name="theme-color" content="#0b1f3a"/>
+<meta name="theme-color" content="#3a0b0b"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <title>We Save Homes | Las Vegas Foreclosure Prevention Education</title>
 <meta name="description" content="Jesse Keenan — Las Vegas Realtor since 2000. Education and guidance for homeowners facing foreclosure. Call (702) 400-9266."/>
 <style>
 :root{
-  --navy:#0b1f3a; --navy2:#123056; --navy3:#1a3f6d;
-  --gold:#c9a227; --gold2:#e0b93a; --gold3:#f5d76e;
-  --white:#ffffff; --off:#f0f4fb; --muted:#5b6b7c;
-  --glass:rgba(255,255,255,.12); --glass-border:rgba(224,185,58,.35);
+  --navy:#3a0b0b; --navy2:#561212; --navy3:#7d1a1a;
+  --gold:#e63946; --gold2:#ff6b6b; --gold3:#ffb3b3;
+  --white:#ffffff; --off:#fbf0f0; --muted:#7c5b5b;
+  --glass:rgba(255,255,255,.12); --glass-border:rgba(255,107,107,.35);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -20,24 +20,24 @@ body{
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   background:var(--off);color:var(--navy);line-height:1.5;
   background-image:
-    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(201,162,39,.08), transparent),
-    radial-gradient(ellipse 60% 40% at 100% 20%, rgba(26,63,109,.06), transparent);
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(230,57,70,.08), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 20%, rgba(125,26,26,.06), transparent);
 }
 a{color:inherit}
 .wrap{max-width:720px;margin:0 auto;padding:0 18px}
 
 /* Topbar glass */
 .topbar{
-  background:rgba(11,31,58,.88);color:#fff;padding:12px 0;
+  background:rgba(58,11,11,.88);color:#fff;padding:12px 0;
   position:sticky;top:0;z-index:20;
   backdrop-filter:blur(16px) saturate(1.4);
   -webkit-backdrop-filter:blur(16px) saturate(1.4);
-  border-bottom:1px solid rgba(201,162,39,.25);
-  box-shadow:0 8px 32px rgba(11,31,58,.35);
+  border-bottom:1px solid rgba(255,107,107,.25);
+  box-shadow:0 8px 32px rgba(58,11,11,.35);
 }
 .topbar-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .brand{font-weight:800;letter-spacing:.02em;font-size:1.05rem;text-shadow:0 1px 8px rgba(0,0,0,.3)}
-.brand span{color:var(--gold2);text-shadow:0 0 18px rgba(224,185,58,.45)}
+.brand span{color:var(--gold2);text-shadow:0 0 18px rgba(255,107,107,.45)}
 
 /* CTA glow */
 .cta{
@@ -47,18 +47,18 @@ a{color:inherit}
   padding:12px 18px;min-height:48px;
   border:1px solid rgba(255,255,255,.35);
   box-shadow:
-    0 4px 16px rgba(201,162,39,.45),
-    0 0 24px rgba(224,185,58,.35),
+    0 4px 16px rgba(230,57,70,.45),
+    0 0 24px rgba(255,107,107,.35),
     inset 0 1px 0 rgba(255,255,255,.5);
   transition:transform .18s ease, box-shadow .18s ease, filter .18s ease;
   animation:ctaPulse 2.8s ease-in-out infinite;
 }
-.cta:hover{transform:scale(1.04);filter:brightness(1.06);box-shadow:0 8px 28px rgba(201,162,39,.55),0 0 36px rgba(224,185,58,.5),inset 0 1px 0 rgba(255,255,255,.55)}
+.cta:hover{transform:scale(1.04);filter:brightness(1.06);box-shadow:0 8px 28px rgba(230,57,70,.55),0 0 36px rgba(255,107,107,.5),inset 0 1px 0 rgba(255,255,255,.55)}
 .cta:active{transform:scale(.97)}
 .cta.block{width:100%;font-size:1.15rem;padding:16px 20px}
 @keyframes ctaPulse{
-  0%,100%{box-shadow:0 4px 16px rgba(201,162,39,.45),0 0 20px rgba(224,185,58,.3),inset 0 1px 0 rgba(255,255,255,.5)}
-  50%{box-shadow:0 6px 22px rgba(201,162,39,.6),0 0 36px rgba(224,185,58,.55),inset 0 1px 0 rgba(255,255,255,.55)}
+  0%,100%{box-shadow:0 4px 16px rgba(230,57,70,.45),0 0 20px rgba(255,107,107,.3),inset 0 1px 0 rgba(255,255,255,.5)}
+  50%{box-shadow:0 6px 22px rgba(230,57,70,.6),0 0 36px rgba(255,107,107,.55),inset 0 1px 0 rgba(255,255,255,.55)}
 }
 
 /* Hero with tilt + animated gradient */
@@ -69,14 +69,14 @@ a{color:inherit}
 .hero::before{
   content:"";position:absolute;inset:-40% -20%;
   background:conic-gradient(from 180deg at 50% 50%,
-    transparent 0deg, rgba(201,162,39,.18) 60deg, transparent 120deg,
-    rgba(26,63,109,.4) 200deg, transparent 280deg);
+    transparent 0deg, rgba(230,57,70,.18) 60deg, transparent 120deg,
+    rgba(125,26,26,.4) 200deg, transparent 280deg);
   animation:heroSweep 12s linear infinite;
   pointer-events:none;
 }
 .hero::after{
   content:"";position:absolute;width:280px;height:280px;border-radius:50%;
-  background:radial-gradient(circle,rgba(224,185,58,.28),transparent 70%);
+  background:radial-gradient(circle,rgba(255,107,107,.28),transparent 70%);
   top:-60px;right:-40px;filter:blur(8px);pointer-events:none;
 }
 @keyframes heroSweep{to{transform:rotate(360deg)}}
@@ -86,11 +86,11 @@ a{color:inherit}
   text-shadow:0 4px 24px rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.08);
   letter-spacing:-.02em;
 }
-.hero p{color:#d7e0ec;font-size:1.05rem;margin-bottom:18px;text-shadow:0 1px 8px rgba(0,0,0,.25)}
+.hero p{color:#ecd7d7;font-size:1.05rem;margin-bottom:18px;text-shadow:0 1px 8px rgba(0,0,0,.25)}
 .badge{
   display:inline-block;
-  background:linear-gradient(135deg,rgba(201,162,39,.22),rgba(201,162,39,.08));
-  border:1px solid rgba(201,162,39,.5);color:var(--gold2);
+  background:linear-gradient(135deg,rgba(230,57,70,.22),rgba(230,57,70,.08));
+  border:1px solid rgba(230,57,70,.5);color:var(--gold2);
   font-size:.78rem;font-weight:700;padding:6px 12px;border-radius:999px;
   text-transform:uppercase;letter-spacing:.05em;
   box-shadow:0 4px 16px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.15);
@@ -101,12 +101,12 @@ a{color:inherit}
   background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.05));
   border:1px solid var(--glass-border);
   backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-  color:#ffe9a8;padding:14px 16px;border-radius:14px;
+  color:#ffd6d6;padding:14px 16px;border-radius:14px;
   box-shadow:0 8px 32px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.2);
 }
 .partner-badge .line1{font-size:.88rem;font-weight:800;letter-spacing:.01em;color:#fff}
 .partner-badge .line1 span{color:var(--gold2)}
-.partner-badge .line2{font-size:.78rem;font-weight:600;color:#d7e0ec;opacity:.95}
+.partner-badge .line2{font-size:.78rem;font-weight:600;color:#ecd7d7;opacity:.95}
 
 .section{padding:40px 0}
 .section h2{font-size:1.5rem;margin-bottom:8px;letter-spacing:-.01em}
@@ -114,17 +114,17 @@ a{color:inherit}
 
 /* Layered glass cards */
 .card{
-  background:linear-gradient(165deg,#ffffff 0%,#f7f9fc 100%);
+  background:linear-gradient(165deg,#ffffff 0%,#f9f7f7 100%);
   border-radius:18px;padding:20px;
   box-shadow:
     0 1px 0 rgba(255,255,255,.9) inset,
-    0 10px 28px rgba(11,31,58,.1),
-    0 2px 6px rgba(11,31,58,.06);
+    0 10px 28px rgba(58,11,11,.1),
+    0 2px 6px rgba(58,11,11,.06);
   margin-bottom:14px;
   border:1px solid rgba(232,237,245,.95);
   transition:transform .22s ease, box-shadow .22s ease;
 }
-.card:hover{transform:translateY(-3px);box-shadow:0 1px 0 rgba(255,255,255,.95) inset,0 16px 36px rgba(11,31,58,.14),0 4px 10px rgba(11,31,58,.08)}
+.card:hover{transform:translateY(-3px);box-shadow:0 1px 0 rgba(255,255,255,.95) inset,0 16px 36px rgba(58,11,11,.14),0 4px 10px rgba(58,11,11,.08)}
 
 .ways{display:grid;gap:12px}
 .way{display:flex;gap:12px;align-items:flex-start}
@@ -133,20 +133,20 @@ a{color:inherit}
   background:linear-gradient(145deg,var(--navy3),var(--navy));
   color:var(--gold2);display:flex;align-items:center;justify-content:center;
   font-weight:800;font-size:.9rem;
-  box-shadow:0 4px 12px rgba(11,31,58,.3), inset 0 1px 0 rgba(255,255,255,.15);
+  box-shadow:0 4px 12px rgba(58,11,11,.3), inset 0 1px 0 rgba(255,255,255,.15);
 }
 
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
 .stat{
   background:linear-gradient(160deg,var(--navy2),var(--navy));
   color:#fff;border-radius:16px;padding:16px 10px;text-align:center;
-  border:1px solid rgba(201,162,39,.25);
-  box-shadow:0 10px 24px rgba(11,31,58,.25), inset 0 1px 0 rgba(255,255,255,.1);
+  border:1px solid rgba(230,57,70,.25);
+  box-shadow:0 10px 24px rgba(58,11,11,.25), inset 0 1px 0 rgba(255,255,255,.1);
   transition:transform .2s ease;
 }
 .stat:hover{transform:translateY(-2px) scale(1.02)}
-.stat strong{display:block;font-size:1.4rem;color:var(--gold2);text-shadow:0 0 16px rgba(224,185,58,.35)}
-.stat span{font-size:.75rem;color:#c9d4e3}
+.stat strong{display:block;font-size:1.4rem;color:var(--gold2);text-shadow:0 0 16px rgba(255,107,107,.35)}
+.stat span{font-size:.75rem;color:#e3c9c9}
 
 .story{border-left:4px solid var(--gold);padding-left:16px;position:relative}
 .story::before{
@@ -165,15 +165,15 @@ a{color:inherit}
 
 .disclaimer{
   font-size:.78rem;color:var(--muted);
-  background:linear-gradient(135deg,#fffaf0,#fff8e6);
-  border:1px solid #f0dfb0;border-radius:14px;padding:14px;margin-top:16px;
-  box-shadow:0 4px 16px rgba(201,162,39,.08);
+  background:linear-gradient(135deg,#fff0f0,#ffe6e6);
+  border:1px solid #dfb0b0;border-radius:14px;padding:14px;margin-top:16px;
+  box-shadow:0 4px 16px rgba(230,57,70,.08);
 }
 
 .footer{
   background:linear-gradient(180deg,var(--navy2),var(--navy));
-  color:#c9d4e3;padding:32px 0 100px;font-size:.9rem;
-  border-top:1px solid rgba(201,162,39,.2);
+  color:#e3c9c9;padding:32px 0 100px;font-size:.9rem;
+  border-top:1px solid rgba(255,107,107,.2);
 }
 .footer a{color:var(--gold2);text-decoration:none}
 .powered{margin-top:18px;font-size:.85rem;font-weight:700;color:var(--gold2);line-height:1.45}
@@ -181,10 +181,10 @@ a{color:inherit}
 .sticky-call{
   position:fixed;left:0;right:0;bottom:0;
   padding:12px 18px calc(12px + env(safe-area-inset-bottom));
-  background:rgba(11,31,58,.92);
+  background:rgba(58,11,11,.92);
   backdrop-filter:blur(14px) saturate(1.3);
   -webkit-backdrop-filter:blur(14px) saturate(1.3);
-  border-top:1px solid rgba(201,162,39,.3);
+  border-top:1px solid rgba(255,107,107,.3);
   z-index:30;box-shadow:0 -8px 32px rgba(0,0,0,.35);
 }
 
@@ -200,35 +200,35 @@ a{color:inherit}
 }
 
 /* Meet Jesse */
-.meet{padding:36px 0;background:linear-gradient(180deg,#fff 0%,#f3f7fc 100%)}
+.meet{padding:36px 0;background:linear-gradient(180deg,#fff 0%,#f7f3f3 100%)}
 .meet-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:16px 0 18px}
 .meet-photo{
   position:relative;aspect-ratio:1;border-radius:18px;overflow:hidden;
-  box-shadow:0 12px 28px rgba(11,31,58,.18),0 0 0 1px rgba(201,162,39,.25);
+  box-shadow:0 12px 28px rgba(58,11,11,.18),0 0 0 1px rgba(230,57,70,.25);
   transform:translateZ(0);transition:transform .22s ease, box-shadow .22s ease;
 }
-.meet-photo:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 18px 36px rgba(11,31,58,.22),0 0 0 1px rgba(201,162,39,.4)}
+.meet-photo:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 18px 36px rgba(58,11,11,.22),0 0 0 1px rgba(230,57,70,.4)}
 .meet-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.05)}
 .meet-photo figcaption{
   position:absolute;left:0;right:0;bottom:0;padding:10px 10px 8px;
-  background:linear-gradient(transparent,rgba(11,31,58,.85));
-  color:#ffe9a8;font-size:.72rem;font-weight:700;text-align:center;
+  background:linear-gradient(transparent,rgba(58,11,11,.85));
+  color:#ffd6d6;font-size:.72rem;font-weight:700;text-align:center;
 }
 .meet-clip{margin-top:8px}
 .meet-clip .video-wrap{padding-bottom:56.25%;border-radius:16px}
 @media (max-width:560px){.meet-grid{grid-template-columns:1fr 1fr}.meet-grid .meet-photo:last-child{grid-column:1 / -1;max-width:70%;justify-self:center}}
 
 /* Pricing */
-.pricing{padding:40px 0 20px;background:linear-gradient(165deg,var(--navy) 0%,var(--navy2) 55%,#1a3f6d 100%);color:#fff;position:relative;overflow:hidden}
-.pricing::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 80% 0%,rgba(224,185,58,.18),transparent 50%);pointer-events:none}
+.pricing{padding:40px 0 20px;background:linear-gradient(165deg,var(--navy) 0%,var(--navy2) 55%,#7d1a1a 100%);color:#fff;position:relative;overflow:hidden}
+.pricing::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 80% 0%,rgba(255,107,107,.18),transparent 50%);pointer-events:none}
 .pricing .wrap{position:relative;z-index:1}
 .pricing h2{color:#fff;font-size:1.55rem}
-.pricing .lead{color:#c9d4e3}
+.pricing .lead{color:#e3c9c9}
 .price-grid{display:grid;gap:14px;margin-top:18px}
 @media (min-width:640px){.price-grid{grid-template-columns:1fr 1fr}}
 .price-card{
   background:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.05));
-  border:1px solid rgba(224,185,58,.35);
+  border:1px solid rgba(255,107,107,.35);
   backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   border-radius:18px;padding:20px 18px;
   box-shadow:0 12px 32px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.2);
@@ -236,255 +236,43 @@ a{color:inherit}
 }
 .price-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.25)}
 .price-card.featured{
-  border-color:rgba(224,185,58,.75);
-  background:linear-gradient(160deg,rgba(224,185,58,.22),rgba(255,255,255,.08));
-  box-shadow:0 14px 40px rgba(201,162,39,.25), inset 0 1px 0 rgba(255,255,255,.25);
+  border-color:rgba(255,107,107,.75);
+  background:linear-gradient(160deg,rgba(255,107,107,.22),rgba(255,255,255,.08));
+  box-shadow:0 14px 40px rgba(230,57,70,.25), inset 0 1px 0 rgba(255,255,255,.25);
 }
 .price-card .tier{font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--gold2)}
 .price-card h3{font-size:1.2rem;margin:6px 0 4px;color:#fff}
-.price-card .price{font-size:1.85rem;font-weight:800;color:var(--gold3);margin:8px 0;text-shadow:0 0 20px rgba(224,185,58,.35)}
-.price-card .price small{font-size:.85rem;font-weight:600;color:#d7e0ec}
+.price-card .price{font-size:1.85rem;font-weight:800;color:var(--gold3);margin:8px 0;text-shadow:0 0 20px rgba(255,107,107,.35)}
+.price-card .price small{font-size:.85rem;font-weight:600;color:#ecd7d7}
 .price-card ul{list-style:none;margin:10px 0 16px;padding:0}
-.price-card li{font-size:.9rem;color:#d7e0ec;padding:5px 0 5px 22px;position:relative}
+.price-card li{font-size:.9rem;color:#ecd7d7;padding:5px 0 5px 22px;position:relative}
 .price-card li::before{content:"✓";position:absolute;left:0;color:var(--gold2);font-weight:800}
-.price-note{margin-top:18px;font-size:.85rem;color:#c9d4e3;text-align:center}
+.price-note{margin-top:18px;font-size:.85rem;color:#e3c9c9;text-align:center}
 .speed-pill{
   display:inline-block;margin-bottom:10px;
-  background:rgba(224,185,58,.15);border:1px solid rgba(224,185,58,.45);
+  background:rgba(255,107,107,.15);border:1px solid rgba(255,107,107,.45);
   color:var(--gold2);font-size:.78rem;font-weight:800;padding:6px 12px;border-radius:999px;
   letter-spacing:.04em;text-transform:uppercase;
 }
 
+/* Alert strip */
+.alert-strip{
+  background:linear-gradient(90deg,#7d1a1a,#3a0b0b);
+  color:#ffd6d6;text-align:center;font-size:.82rem;font-weight:700;
+  letter-spacing:.04em;text-transform:uppercase;padding:8px 12px;
+  border-bottom:1px solid rgba(255,107,107,.4);
+}
+.alert-strip strong{color:#ffb3b3}
 </style>
 </head>
 <body>
+<div class="alert-strip"><strong>Act now</strong> — foreclosure auctions move fast. Call before the date is set.</div>
 <header class="topbar">
   <div class="wrap topbar-inner">
     <div class="brand">We Save <span>Homes</span></div>
     <a class="cta" href="tel:+17024009266">Call Now</a>
   </div>
 </header>
-
-<section class="hero">
-  <div class="wrap">
-    <div class="badge">Las Vegas · Since 2000</div>
-    <h1>Stop Foreclosure.<br/>Save Your Home.</h1>
-    <p>Real-estate education from a Realtor who lived it. Understand your options, then get referred to the right licensed attorney or lender — before the auction date.</p>
-    <a class="cta block" href="tel:+17024009266">📞 Call Jesse — (702) 400-9266</a>
-    <div class="partner-badge">
-      <div class="line1">Engineered by <span>Grok AI</span> × Johnny's Multimedia</div>
-      <div class="line2">A $2,000 custom web design — built in minutes. This is a free trial.</div>
-    </div>
-  </div>
-</section>
-
-<section class="meet reveal" id="meet-jesse">
-  <div class="wrap">
-    <div class="badge" style="margin-bottom:8px">Your local expert</div>
-    <h2>Meet Jesse Keenan</h2>
-    <p class="lead">The smile you want on your side — Las Vegas Realtor since 2000, and the face of We Save Homes. He used to work in media; he knows what belongs on camera.</p>
-    <div class="meet-grid">
-      <figure class="meet-photo">
-        <img src="https://i.ytimg.com/vi/oHnjxX17iI4/hqdefault.jpg" alt="Jesse Keenan smiling — We Save Homes" style="object-position:78% center" loading="lazy"/>
-        <figcaption>Jesse Keenan</figcaption>
-      </figure>
-      <figure class="meet-photo">
-        <img src="https://i.ytimg.com/vi/Iit1Vluwmps/hqdefault.jpg" alt="Jesse Keenan — professional headshot" style="object-position:82% center" loading="lazy"/>
-        <figcaption>Ready to help</figcaption>
-      </figure>
-      <figure class="meet-photo">
-        <img src="https://i.ytimg.com/vi/DFI9y2pDMrE/hqdefault.jpg" alt="Jesse Keenan — We Save Homes" style="object-position:80% center" loading="lazy"/>
-        <figcaption>On your team</figcaption>
-      </figure>
-    </div>
-    <div class="card meet-clip">
-      <p style="margin-bottom:10px;font-weight:700">Hear him in his own words <span style="font-weight:500;color:var(--muted)">(short clip from his YouTube channel)</span></p>
-      <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/Iit1Vluwmps?start=5&end=20" title="Jesse Keenan — Behind on Mortgage Payments" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-      </div>
-      <p class="video-note">From We Save Homes YouTube · Photos cropped from Jesse’s public video thumbnails</p>
-    </div>
-  </div>
-</section>
-
-<section class="section reveal" id="video">
-  <div class="wrap">
-    <h2>See a Las Vegas foreclosure auction</h2>
-    <p class="lead"><strong>Demo / example video</strong> — from the We Save Homes YouTube channel. Shows what an auction looks like so homeowners understand the timeline.</p>
-    <div class="card">
-      <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/GKbACoLWFwQ" title="Demo: LIVE Foreclosure Auction in Las Vegas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-      </div>
-      <p class="video-note">▶️ Demo example only · Replace with your own walkthrough video anytime.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section reveal" id="ways" style="background:linear-gradient(180deg,#fff 0%,#f5f8fc 100%)">
-  <div class="wrap">
-    <h2>8 Ways to Stop Foreclosure</h2>
-    <p class="lead">A clear overview of common paths. Jesse helps you understand the landscape and connects you with licensed attorneys when legal work is needed.</p>
-    <div class="card ways">
-      <div class="way"><div class="num">1</div><div><strong>Talk early</strong><br/>Contact your lender before missed payments stack up.</div></div>
-      <div class="way"><div class="num">2</div><div><strong>Repayment plan</strong><br/>Catch up overdue amounts over time.</div></div>
-      <div class="way"><div class="num">3</div><div><strong>Forbearance</strong><br/>Temporary pause or reduction (lender programs vary).</div></div>
-      <div class="way"><div class="num">4</div><div><strong>Loan options</strong><br/>Refinance via licensed lenders — Jesse refers, he doesn’t close loans.</div></div>
-      <div class="way"><div class="num">5</div><div><strong>Deed in lieu</strong><br/>Voluntary transfer to the lender in some cases.</div></div>
-      <div class="way"><div class="num">6</div><div><strong>Short sale</strong><br/>Sell with lender approval when equity is gone.</div></div>
-      <div class="way"><div class="num">7</div><div><strong>Bankruptcy counsel</strong><br/>Chapter 7/13 is attorney-only — referral to licensed counsel.</div></div>
-      <div class="way"><div class="num">8</div><div><strong>Sell &amp; restart</strong><br/>A planned sale can stop the clock better than auction.</div></div>
-    </div>
-    <p class="disclaimer"><strong>Important:</strong> We Save Homes provides real-estate guidance and foreclosure-prevention <em>education</em>. We are not a mortgage lender or Nevada “covered service provider” for loan modification / foreclosure-rescue services. Legal and lending work is handled by independently licensed attorneys and lenders.</p>
-  </div>
-</section>
-
-<section class="section reveal" id="why">
-  <div class="wrap">
-    <h2>Why Jesse</h2>
-    <div class="card story">
-      <p>In 2010, after the crash, Jesse Keenan faced foreclosure himself. He learned the process the hard way — then rebuilt his career helping Las Vegas homeowners navigate the same fear with a plan.</p>
-      <p style="margin-top:12px">Licensed Realtor in Las Vegas since <strong>2000</strong>. <strong>140+</strong> properties sold. <strong>5.0</strong> on Zillow. <strong>26 years</strong> in the market. He also leads the Las Vegas Dream Team at HomeSmart Encore.</p>
-      <p style="margin-top:12px;font-weight:700;color:var(--navy)">His focus: get you options before the courthouse steps.</p>
-    </div>
-    <div class="stats">
-      <div class="stat"><strong>26</strong><span>Years</span></div>
-      <div class="stat"><strong>140+</strong><span>Sales</span></div>
-      <div class="stat"><strong>5.0</strong><span>Zillow</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section reveal" style="background:linear-gradient(180deg,#fff 0%,#f5f8fc 100%)" id="services">
-  <div class="wrap">
-    <h2>How we help</h2>
-    <div class="card"><strong>Foreclosure-prevention education</strong><br/>Understand notices, timelines, and realistic next steps.</div>
-    <div class="card"><strong>Distressed-property strategy</strong><br/>Sell, keep, or restructure the plan with a Realtor who knows Vegas numbers.</div>
-    <div class="card"><strong>Attorney &amp; lender referrals</strong><br/>When you need legal or loan help, get pointed to licensed professionals.</div>
-    <a class="cta block" href="tel:+17024009266" style="margin-top:8px">Call (702) 400-9266</a>
-  </div>
-</section>
-
-
-<section class="pricing reveal" id="pricing">
-  <div class="wrap">
-    <div class="speed-pill">Built in hours, not weeks</div>
-    <h2>Johnny's Multimedia × Grok AI</h2>
-    <p class="lead">A real service menu for Realtors who need a premium mobile site — live fast, look custom, keep control. This page is the launch demo.</p>
-    <div class="price-grid">
-      <div class="price-card featured">
-        <div class="tier">Starter · Free Trial</div>
-        <h3>Mobile One-Pager</h3>
-        <div class="price">$0 <small>today</small></div>
-        <p style="font-size:.9rem;color:#ffe9a8;margin-bottom:6px">Normally a <strong>$2,000</strong> custom design</p>
-        <ul>
-          <li>What you’re looking at right now</li>
-          <li>Tap-to-call, video, education framing</li>
-          <li>Navy / gold premium look</li>
-          <li>Live in hours — not weeks</li>
-        </ul>
-        <a class="cta block" href="tel:+17024009266">Get started — call Jesse</a>
-      </div>
-      <div class="price-card">
-        <div class="tier">Enhancement</div>
-        <h3>Photo + Video Package</h3>
-        <div class="price">$497</div>
-        <ul>
-          <li>Photo galleries &amp; headshots</li>
-          <li>Extra video embeds</li>
-          <li>Custom branding polish</li>
-          <li>Basic SEO setup</li>
-        </ul>
-        <a class="cta block" href="tel:+17024009266">Get started</a>
-      </div>
-      <div class="price-card">
-        <div class="tier">Custom Build</div>
-        <h3>Full Site, Your Input</h3>
-        <div class="price">$1,500 <small>flat</small></div>
-        <ul>
-          <li>Multi-page site with revisions</li>
-          <li>Your copy, photos, domain</li>
-          <li>Ongoing update handoff</li>
-          <li>Or scoped hourly if preferred</li>
-        </ul>
-        <a class="cta block" href="tel:+17024009266">Get started</a>
-      </div>
-      <div class="price-card">
-        <div class="tier">Premium · Ongoing</div>
-        <h3>Monthly Retainer</h3>
-        <div class="price">$99 <small>/mo</small></div>
-        <ul>
-          <li>Fresh updates &amp; new listings</li>
-          <li>Analytics check-ins</li>
-          <li>Priority turnaround</li>
-          <li>Keep the site earning for you</li>
-        </ul>
-        <a class="cta block" href="tel:+17024009266">Get started</a>
-      </div>
-    </div>
-    <p class="price-note">Engineered by <strong style="color:var(--gold2)">Grok AI × Johnny's Multimedia</strong> — a revenue-ready web service, not a weekend hobby. Demo pricing for launch partners.</p>
-  </div>
-</section>
-
-<section class="section reveal" id="builder">
-  <div class="wrap">
-    <h2>Built for you by Johnny's Multimedia</h2>
-    <p class="lead">Real intelligence backed by artificial intelligence — contact me with any inquiries.</p>
-    <div class="card" style="border:1px solid rgba(201,162,39,.4);background:linear-gradient(145deg,#fff,#f7f9fc);box-shadow:0 12px 32px rgba(11,31,58,.12)">
-      <p style="margin:0 0 6px;font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)">Johnny's Multimedia Web Builder</p>
-      <p style="margin:0;font-size:1.15rem;font-weight:800;color:var(--navy)">Johnny Dickerson</p>
-      <p style="margin:10px 0 0;color:var(--muted)">📞 Primary <a href="tel:+14067817834" style="color:var(--navy);font-weight:700">(406) 781-7834</a><br/>
-      📞 Secondary <a href="tel:+14067819918" style="color:var(--navy);font-weight:700">(406) 781-9918</a></p>
-      <p style="margin:12px 0 0;font-size:.92rem;color:var(--navy2);font-style:italic">Real intelligence backed by artificial intelligence — contact me with any inquiries.</p>
-    </div>
-    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px">
-      <a class="cta" href="tel:+14067817834">Call Johnny</a>
-      <a class="cta" href="sms:+14067817834" style="background:linear-gradient(135deg,#1a3f6d,#0b1f3a);color:#fff;border-color:rgba(224,185,58,.5)">Text Johnny</a>
-    </div>
-  </div>
-</section>
-
-<section class="section reveal" id="contact">
-  <div class="wrap">
-    <h2>Talk today</h2>
-    <p class="lead">Skip the forms. Tap call — Jesse wants the conversation.</p>
-    <div class="card">
-      <p><strong>Jesse Keenan</strong><br/>We Save Homes · Las Vegas, NV</p>
-      <p style="margin-top:10px">📞 <a href="tel:+17024009266">(702) 400-9266</a><br/>
-      ✉️ <a href="mailto:j4009266@gmail.com">j4009266@gmail.com</a><br/>
-      ✉️ <a href="mailto:JesseKeenanLV@gmail.com">JesseKeenanLV@gmail.com</a><br/>
-      📍 8367 W Flamingo Rd, Ste 101<br/>Las Vegas, NV 89147</p>
-    </div>
-    <a class="cta block" href="sms:+17024009266">Text (702) 400-9266</a>
-    <div class="partner-badge" style="margin-top:16px;background:linear-gradient(145deg,#fff,#f7f9fc);border-color:rgba(201,162,39,.45);color:var(--navy);box-shadow:0 10px 28px rgba(11,31,58,.1)">
-      <div class="line1" style="color:var(--navy)">Designed by <span>Grok AI</span> in collaboration with Johnny's Multimedia Web Builder</div>
-      <div class="line2" style="color:var(--muted)">A $2,000 custom web design — built in minutes. This is a free trial.</div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="wrap">
-    <h3>We Save Homes</h3>
-    <p>Foreclosure-prevention education &amp; real-estate guidance in Las Vegas.</p>
-    <p style="margin-top:10px"><a href="tel:+17024009266">(702) 400-9266</a> · <a href="mailto:j4009266@gmail.com">j4009266@gmail.com</a></p>
-    <p style="margin-top:10px">8367 W Flamingo Rd, Ste 101, Las Vegas, NV 89147</p>
-    <p style="margin-top:14px;font-size:.75rem;opacity:.8">Disclaimer: Educational and real-estate information only. Not legal, tax, or lending advice. Not a Nevada covered service provider for loan modification or foreclosure-rescue services. Equal Housing Opportunity.</p>
-    <p class="powered">Engineered by Grok AI × Johnny's Multimedia<br/>Johnny Dickerson · (406) 781-7834 · (406) 781-9918<br/>A $2,000 custom web design — built in minutes. This is a free trial.<br/><em>Real intelligence backed by artificial intelligence — contact me with any inquiries.</em></p>
-  </div>
-</footer>
-
-<div class="sticky-call">
-  <a class="cta block" href="tel:+17024009266">📞 Call (702) 400-9266</a>
-</div>
-<script>
-(function(){
-  var els=document.querySelectorAll('.reveal');
-  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('visible')});return;}
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('visible');io.unobserve(en.target);}});
-  },{threshold:0.12,rootMargin:'0px 0px -24px 0px'});
-  els.forEach(function(e){io.observe(e);});
-})();
-</script>
+REDACTED_BODY_PLACEHOLDER
 </body>
 </html>
