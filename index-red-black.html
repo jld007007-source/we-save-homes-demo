@@ -20,7 +20,7 @@ body{font-family:-apple-system,sans-serif;background:var(--off);color:#e8e8e8;li
 .section{padding:40px 0}.section h2{font-size:1.5rem;margin-bottom:8px;color:#fff}
 .card{background:linear-gradient(165deg,#1f1f1f,#161616);border-radius:18px;padding:20px;margin-bottom:14px;border:1px solid rgba(196,30,58,.25);color:#e8e8e8}
 .price-grid{display:grid;gap:14px;margin-top:18px}
-@media(min-width:640px){.price-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:640px){.price-grid{grid-template-columns:1fr}}
 .price-card{background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border:1px solid rgba(196,30,58,.35);border-radius:18px;padding:20px 18px}
 .price-card.featured{border-color:rgba(230,57,80,.75);background:linear-gradient(160deg,rgba(196,30,58,.22),rgba(255,255,255,.05))}
 .price-card .tier{font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--gold2)}
@@ -32,19 +32,36 @@ body{font-family:-apple-system,sans-serif;background:var(--off);color:#e8e8e8;li
 .footer{background:linear-gradient(180deg,#1a1a1a,#0a0a0a);color:#a0a0a0;padding:32px 0 100px;font-size:.9rem}
 .sticky-call{position:fixed;left:0;right:0;bottom:0;padding:12px 18px;background:rgba(10,10,10,.95);border-top:1px solid rgba(196,30,58,.3);z-index:30}
 a{color:var(--gold2)}
+.hero-tag{font-size:1.15rem;font-weight:800;color:#fff;margin:0 0 10px}.hero-tag span{color:var(--gold3)}
+.urgent{background:#2d0008;border:1px solid var(--gold);border-radius:14px;padding:12px 14px;margin:0 0 16px;font-size:.92rem;color:#ffccd5}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;border-radius:16px;overflow:hidden;border:1px solid rgba(196,30,58,.4)}.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.card{background:#151515;border:1px solid rgba(196,30,58,.3);border-radius:16px;padding:18px}
+.intake label{display:block;font-size:.85rem;color:#d0d0d0;margin:10px 0 4px}.intake input,.intake select,.intake textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #444;background:#0a0a0a;color:#fff;font:inherit}
+.intake button{margin-top:14px;border:0;cursor:pointer}.legal{font-size:.8rem;color:#bdbdbd}
 </style>
 </head>
 <body>
 <header class="topbar"><div class="wrap" style="display:flex;justify-content:space-between;align-items:center"><div class="brand">We Save <span>Homes</span></div><a class="cta" href="tel:+17024009266">Call Now</a></div></header>
-<section class="hero"><div class="wrap"><div class="badge">Las Vegas · Since 2000 · Red/Black</div><h1>Stop Foreclosure.<br/>Save Your Home.</h1><p style="color:#c9c9c9;margin-bottom:18px">Real-estate education from a Realtor who lived it. Call (702) 400-9266.</p><a class="cta block" href="tel:+17024009266">Call Jesse — (702) 400-9266</a><p style="margin-top:16px;font-size:.85rem;color:#ffccd5">$250 one-time + $4/deal · Engineered by Grok AI × Johnny's Multimedia</p></div></section>
+<section class="hero"><div class="wrap"><div class="badge">Las Vegas · Since 2000 · Red/Black</div><h1>Stop Foreclosure.<br/>Save Your Home.</h1><p class="hero-tag">Ready to <span>bend over backwards</span> to earn your business.</p><div class="urgent"><strong>Got a notice or a sale date?</strong> Call today. The sooner you call, the more options you usually have before the auction.</div><p style="color:#c9c9c9;margin-bottom:18px">Real-estate education from a Realtor who lived it. Learn your options, then get referred to a licensed Nevada attorney, lender, or HUD-approved counselor.</p><a class="cta block" href="tel:+17024009266">Call Jesse — (702) 400-9266</a><p style="margin-top:16px;font-size:.85rem;color:#ffccd5">$250 one-time + $4 deal rate · Engineered by Grok AI × Johnny's Multimedia</p></div></section>
+<section class="section" id="video"><div class="wrap"><h2>Meet Jesse</h2><div class="video-wrap"><iframe src="https://www.youtube.com/embed/Iit1Vluwmps?start=5&amp;end=20" title="Jesse Keenan — We Save Homes" loading="lazy" allowfullscreen></iframe></div><p class="legal" style="margin-top:8px">From the We Save Homes YouTube channel.</p></div></section>
 <section class="section" id="pricing"><div class="wrap"><h2>Johnny's Multimedia × Grok AI</h2><p style="color:var(--muted)">Red/Black edition — launch-ready mobile one-pager.</p><div class="price-grid">
-<div class="price-card featured"><div class="tier">Launch · Red/Black</div><h3>Mobile One-Pager</h3><div class="price">$250 <small style="font-size:.85rem;font-weight:600;color:#d0d0d0">one-time</small></div><p style="font-size:.9rem;color:#ffccd5;margin-bottom:6px">+ <strong>$4</strong> per closed deal</p><ul><li>Red / black premium look</li><li>Tap-to-call, video, education framing</li><li>Live in hours — not weeks</li><li>Performance-aligned deal rate</li></ul><a class="cta block" href="tel:+17024009266">Get started</a></div>
-<div class="price-card"><div class="tier">Enhancement</div><h3>Photo + Video Package</h3><div class="price">$497</div><ul><li>Photo galleries &amp; headshots</li><li>Extra video embeds</li><li>Custom branding polish</li><li>Basic SEO setup</li></ul><a class="cta block" href="tel:+17024009266">Get started</a></div>
-<div class="price-card"><div class="tier">Custom</div><h3>Full Custom Site</h3><div class="price">$1,500</div><ul><li>Multi-page custom build</li><li>Lead forms + CRM handoff</li><li>Copy + layout tailored to Jesse</li><li>Launch support</li></ul><a class="cta block" href="tel:+17024009266">Get started</a></div>
-<div class="price-card"><div class="tier">Retainer</div><h3>Monthly Care</h3><div class="price">$99<small style="font-size:.85rem;font-weight:600;color:#d0d0d0">/mo</small></div><ul><li>Hosting + updates</li><li>Copy tweaks</li><li>Analytics check</li><li>Priority support</li></ul><a class="cta block" href="tel:+17024009266">Get started</a></div>
-</div></div></section>
-<section class="section"><div class="wrap"><div class="card"><strong>Jesse Keenan</strong><br/>Las Vegas Realtor since 2000 · We Save Homes<br/>📞 <a href="tel:+17024009266">(702) 400-9266</a><br/>✉️ <a href="mailto:jesse@wesavehomes.com">jesse@wesavehomes.com</a> · <a href="mailto:JesseKeenanLV@gmail.com">JesseKeenanLV@gmail.com</a> · <a href="mailto:j4009266@gmail.com">j4009266@gmail.com</a></div></div></section>
-<footer class="footer"><div class="wrap"><h3 style="color:#fff">We Save Homes</h3><p>Foreclosure-prevention education · Las Vegas</p><p style="margin-top:10px">Engineered by Grok AI × Johnny's Multimedia<br/>$250 one-time + $4/deal · Red/Black edition</p></div></footer>
+<div class="price-card featured"><div class="tier">Launch · Red/Black</div><h3>Mobile One-Pager</h3><div class="price">$250 <small style="font-size:.85rem;font-weight:600;color:#d0d0d0">one-time</small></div><p style="font-size:.9rem;color:#ffccd5;margin-bottom:6px">+ <strong>$4</strong> deal rate</p><ul><li>Red / black premium look</li><li>Tap-to-call, video, education framing</li><li>Live in hours — not weeks</li><li>$4 deal rate</li></ul><a class="cta block" href="tel:+17024009266">Get started</a></div>
+</div><p style="margin-top:14px;font-size:.82rem;color:var(--muted)">That's the whole price: $250 one-time, plus a $4 deal rate. No other tiers.</p></div></section>
+<section class="section" id="intake"><div class="wrap"><div class="card"><h2>Tell Jesse what's going on</h2>
+<form class="intake" id="lead-intake" data-pipeline="people-deals-index" action="mailto:jesse@wesavehomes.com" method="post" enctype="text/plain">
+<label for="f-name">Name</label><input id="f-name" name="name" data-index-field="Name" required>
+<label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" data-index-field="Phone" required>
+<label for="f-email">Email</label><input id="f-email" name="email" type="email" data-index-field="Email">
+<label for="f-addr">Property city / ZIP</label><input id="f-addr" name="property" data-index-field="Property">
+<label for="f-stage">Where are you?</label><select id="f-stage" name="stage" data-index-field="Deal stage"><option>Behind on payments</option><option>Got a notice of default</option><option>Sale date set</option><option>Just exploring</option></select>
+<label for="f-sale">Sale date (if known)</label><input id="f-sale" name="sale_date" type="date" data-index-field="Key date">
+<label for="f-notes">Anything else</label><textarea id="f-notes" name="notes" rows="3" data-index-field="Notes"></textarea>
+<input type="hidden" name="source" value="index-red-black" data-index-field="Source">
+<button class="cta block" type="submit">Send to Jesse</button>
+<p class="legal" style="margin-top:8px">This demo opens your email app. Nothing is stored on this page.</p></form></div></div></section>
+<section class="section" id="legal"><div class="wrap"><div class="card legal"><strong style="color:#fff">How we help (and what we don't do)</strong><br/>We Save Homes provides real-estate education and connects homeowners with independently licensed Nevada attorneys, lenders, and HUD-approved housing counselors. We facilitate those introductions only. We do not negotiate with your lender, do not provide legal advice, do not promise or guarantee any result, and do not charge homeowners advance fees for foreclosure help (Nevada NRS 645F). Only your lender or servicer can approve a modification or other outcome.</div></div></section>
+<section class="section"><div class="wrap"><div class="card"><strong>Jesse Keenan</strong><br/>Las Vegas Realtor since 2000 · We Save Homes<br/>📞 <a href="tel:+17024009266">(702) 400-9266</a><br/>✉️ <a href="mailto:jesse@wesavehomes.com">jesse@wesavehomes.com</a></div></div></section>
+<footer class="footer"><div class="wrap"><h3 style="color:#fff">We Save Homes</h3><p>Foreclosure-prevention education · Las Vegas</p><p style="margin-top:10px">Engineered by Grok AI × Johnny's Multimedia<br/>$250 one-time + $4 deal rate · Red/Black edition</p></div></footer>
 <div class="sticky-call"><a class="cta block" href="tel:+17024009266">Call (702) 400-9266</a></div>
 </body>
 </html>

@@ -1,0 +1,22 @@
+{
+  "_note": "Field mapping only. No personal contact data is stored in this public repo. Leads land in Jesse's inbox via mailto (demo) and are logged by hand or automation into Johnny's People & Deals Index in Notion (private).",
+  "form_id": "lead-intake",
+  "source_page": "index-red-black.html",
+  "target": {
+    "system": "Notion",
+    "page": "Johnny's People & Deals Index",
+    "page_id": "3e5d36134370812b9fc7f9b00140a174",
+    "parent_contact": "Jesse Keenan (We Save Homes)",
+    "deal_line": "$250 one-time + $4 deal rate"
+  },
+  "fields": {
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "property": "Property",
+    "stage": "Deal stage",
+    "sale_date": "Key date",
+    "notes": "Notes",
+    "source": "Source"
+  }
+}

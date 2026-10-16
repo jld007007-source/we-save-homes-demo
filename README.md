@@ -20,3 +20,7 @@ Public mobile-first one-pager for Jesse Keenan (We Save Homes).
 2. Photo + Video — $497
 3. Full Custom Site — $1,500
 4. Monthly Care — $99/mo
+
+## Red/black final (branch `red-black-final`)
+- `index-red-black.html`: bend-over-backwards hero, urgency note, Jesse video, single price card ($250 one-time + $4 deal rate), lead intake form, NRS 645F facilitation-only disclaimer. Personal Gmail addresses were removed from the public page; only the business email and phone stay.
+- `pipeline/people-deals-index-mapping.json`: maps each intake form field (`data-index-field`) to the People & Deals Index schema in Notion. No contact data is stored in the repo.
