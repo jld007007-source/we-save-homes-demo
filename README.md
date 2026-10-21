@@ -1,26 +1,17 @@
 # We Save Homes — Mobile Demo
 
-Public mobile-first one-pager for Jesse Keenan (We Save Homes).
+Public mobile-first one-pager for Jesse Keenan (We Save Homes), built by Johnny's Multimedia × Grok AI.
 
-- Real-estate education + attorney referral framing (not loan modification)
-- Call: (702) 400-9266
-- Contacts: jesse@wesavehomes.com, JesseKeenanLV@gmail.com, j4009266@gmail.com
-- Monetization (locked): **$250 one-time + $4 per closed deal**
-- Built with Grok AI × Johnny's Multimedia
-
-## Live
-
-- GitHub Pages (navy/gold default): https://jld007007-source.github.io/we-save-homes-demo/
-- Red/Black edition: https://jld007007-source.github.io/we-save-homes-demo/index-red-black.html
-- Source: https://github.com/jld007007-source/we-save-homes-demo/blob/main/index-red-black.html
-
-## Pricing on the red/black page
-
-1. Mobile One-Pager — $250 + $4/deal (featured)
-2. Photo + Video — $497
-3. Full Custom Site — $1,500
-4. Monthly Care — $99/mo
+- Real-estate education + referral framing (facilitation only, NRS 645F; not loan modification)
+- Public contact: (702) 400-9266 · jesse@wesavehomes.com (business contacts only; no personal addresses in this repo)
 
 ## Red/black final (branch `red-black-final`)
-- `index-red-black.html`: bend-over-backwards hero, urgency note, Jesse video, single price card ($250 one-time + $4 deal rate), lead intake form, NRS 645F facilitation-only disclaimer. Personal Gmail addresses were removed from the public page; only the business email and phone stay.
-- `pipeline/people-deals-index-mapping.json`: maps each intake form field (`data-index-field`) to the People & Deals Index schema in Notion. No contact data is stored in the repo.
+
+- `index-red-black.html` — black base with deep-red accents. Sections: sticky Call Now bar → hero ("Stop Foreclosure. Save Your Home." + bend-over-backwards line + urgency box) → Meet Jesse video → website pricing → lead intake form → "How we help" compliance card → Jesse contact card → footer → sticky call bar.
+- **Monetization (single plan):** $250 one-time setup + $4 deal rate (per deal). Shown as one card, labeled as business pricing for We Save Homes, not a homeowner fee. The "Get started" button is a labeled placeholder; no payment is processed.
+- `pipeline/people-deals-index-mapping.json` — maps each intake field (`data-index-field`) to the People & Deals Index fields in Notion (private), plus the deal key `we-save-homes-red-black` and the Notion deal page. Field mapping only; no contact data is stored here.
+
+## Preview
+
+- Branch preview: https://raw.githack.com/jld007007-source/we-save-homes-demo/red-black-final/index-red-black.html
+- GitHub Pages is not currently serving this repo (404 as of 2026-10-20); deploying is a separate decision.

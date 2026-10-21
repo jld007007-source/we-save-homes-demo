@@ -17,6 +17,24 @@
     "stage": "Deal stage",
     "sale_date": "Key date",
     "notes": "Notes",
-    "source": "Source"
-  }
+    "source": "Source",
+    "deal": "Deal"
+  },
+  "deal": {
+    "key": "we-save-homes-red-black",
+    "client": "We Save Homes (Jesse Keenan)",
+    "pricing": {
+      "setup_usd_one_time": 250,
+      "deal_rate_usd": 4,
+      "deal_rate_unit": "per deal (exact basis to be confirmed by Johnny)"
+    },
+    "notion_deal_page": "https://app.notion.com/p/3e5d36134370812c8fe5c532c90f5bef",
+    "notion_index_page": "https://app.notion.com/p/3e5d36134370812b9fc7f9b00140a174",
+    "index_entry": "People > Jesse Keenan"
+  },
+  "intake_flow": [
+    "Homeowner submits #lead-intake (mailto to the business inbox, nothing stored on the site)",
+    "Lead is logged under Jesse Keenan in the People & Deals Index using the field names above",
+    "Deal key we-save-homes-red-black ties each lead back to the Red background design page"
+  ]
 }
